@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+  <head>
+
+          <meta charset="utf-8">
+          <meta name="HandheldFriendly" content="true" />
+          <meta name="MobileOptimized" content="320" />
+          <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+
+          <title>Frame</title>
+
+          <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+          <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+          <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+          <link rel="stylesheet" href="CSS/form.css">
+          <link rel="stylesheet" href="CSS/physical.css">
+          <link rel="icon" href="Images/Pro Clubs.ico">
+  </head>
+  <body style="background-color: rgba(28,31,26,0.5);">
+
+      <div class="col" id="left-phy-tree">
+        <button type="button" name="button" onclick="increaseAttribute('strength', 2)"><img id="Strength1" src="Images/Skill Tree/Physical/Strength.png" alt="" onmouseleave="offHover('Strength', 1)" onmouseover="onHover('Strength', 1)"></button>
+        <br>
+        <button type="button" name="button"><img id="Stamina1" src="Images/Skill Tree/Physical/Stamina.png" alt="" onmouseleave="offHover('Stamina', 1)" onmouseover="onHover('Stamina', 1)"></button>
+        <br>
+        <button type="button" name="button"><img id="Strength2" src="Images/Skill Tree/Physical/Strength.png" alt="" onmouseleave="offHover('Strength', 2)" onmouseover="onHover('Strength', 2)"></button>
+        <button type="button" name="button"><img id="Jumping1" src="Images/Skill Tree/Physical/Jumping.png" alt="" onmouseleave="offHover('Jumping', 1)" onmouseover="onHover('Jumping', 1)"></button>
+        <button type="button" name="button"><img id="Reactions1" src="Images/Skill Tree/Physical/Reactions.png" alt="" onmouseleave="offHover('Reactions', 1)" onmouseover="onHover('Reactions', 1)"></button>
+        <br>
+        <button type="button" name="button"><img id="Bull1" src="Images/Skill Tree/Physical/Bull.png" alt="" onmouseleave="offHover('Bull',1)" onmouseover="onHover('Bull',1)"></button>
+        <button type="button" name="button"><img id="Reactions2" src="Images/Skill Tree/Physical/Reactions.png" alt="" onmouseleave="offHover('Reactions', 2)" onmouseover="onHover('Reactions', 2)"></button>
+        <button type="button" name="button"><img id="Aggression1" src="Images/Skill Tree/Physical/Aggression.png" alt="" onmouseleave="offHover('Aggression', 1)" onmouseover="onHover('Aggression',1)"></button>
+      </div>
+      <div class="col" id="right-phy-tree">
+        <button type="button" name="button" style="margin-right:78px;"><img id="Stamina2" src="Images/Skill Tree/Physical/Stamina.png" alt="" onmouseleave="offHover('Stamina',2)" onmouseover="onHover('Stamina',2)"></button>
+        <br>
+        <button type="button" name="button" style="margin-right:78px;"><img id="Reactions3" src="Images/Skill Tree/Physical/Reactions.png" alt="" onmouseleave="offHover('Reactions', 3)" onmouseover="onHover('Reactions',3)"></button>
+        <br>
+        <button type="button" name="button"><img id="Aggression2" src="Images/Skill Tree/Physical/Aggression.png" alt="" onmouseleave="offHover('Aggression', 2)" onmouseover="onHover('Aggression',2)"></button>
+        <button type="button" name="button"><img id="Jumping2" src="Images/Skill Tree/Physical/Jumping.png" alt="" onmouseleave="offHover('Jumping', 2)" onmouseover="onHover('Jumping','2')"></button>
+        <br>
+        <button type="button" name="button"><img id="Jumping3" src="Images/Skill Tree/Physical/Jumping.png" alt="" onmouseleave="offHover('Jumping', 3 )" onmouseover="onHover('Jumping','3')"></button>
+        <button type="button" name="button"><img id="Acrobat1" src="Images/Skill Tree/Physical/Acrobat.png" alt="" onmouseleave="offHover('Acrobat', 1)" onmouseover="onHover('Acrobat','1')"></button>
+      </div>
+      <div class="col" id="phy-stats">
+        <table>
+          <tr>
+            <th>Physical</th>
+          </tr>
+          <tr>
+            <td colspan="2" id="progressbar">
+              <div class="progress physical-progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 2px" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+            <td id="physical-progress-stat"></td>
+          </tr>
+          <tr>
+            <td>Jumping</td>
+            <td id="progressbar">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 74px" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+            <td>74</td>
+            <td id="growth-value"></td>
+          </tr>
+          <tr>
+            <td>Stamina</td>
+            <td id="progressbar">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 77px" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+            <td>77</td>
+            <td id="growth-value"></td>
+          </tr>
+          <tr>
+            <td>Strength</td>
+            <td id="progressbar">
+              <div class="progress">
+                <div id="strength-bar" class="progress-bar" role="progressbar" style="width: 78px" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                <div id="strength-success" class="progress-bar grow bg-success" role="progressbar" style="width: 0px" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+            <td id="strength-val">78</td>
+            <td id="growth-value" class="strength-success-value"></td>
+          </tr>
+          <tr>
+            <td>Reactions</td>
+            <td id="progressbar">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 83px" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+            <td>83</td>
+            <td id="growth-value"></td>
+          </tr>
+          <tr>
+            <td>Aggression</td>
+            <td id="progressbar">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 83px" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+            <td>83</td>
+            <td id="growth-value"></td>
+          </tr>
+        </table>
+      </div>
+
+  </body>
+  <script type="text/javascript" src="Javascript/physical-js.js"></script>
+</html>

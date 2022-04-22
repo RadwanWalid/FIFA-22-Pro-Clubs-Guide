@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+
+  <title>Frame</title>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="CSS/form.css">
+  <link rel="stylesheet" href="CSS/defending.css">
+  <link rel="icon" href="Images/Pro Clubs.ico">
+</head>
+
+<body style="background-color: rgba(28,31,26,0.5);">
+
+  <div class="col" id="def-tree">
+    <button type="button" name="button" style="margin-right:78px;"><img id="Interceptions1" src="Images/Skill Tree/Defending/Interceptions.png" onmouseleave="offHover('Interceptions', 1)" onmouseover="onHover('Interceptions', 1)" alt=""></button>
+    <button type="button" name="button"><img id="Standing-Tackle1" src="Images/Skill Tree/Defending/Standing-Tackle.png" onmouseleave="offHover('Standing-Tackle', 1)" onmouseover="onHover('Standing-Tackle', 1)" alt=""></button>
+    <br>
+    <button type="button" name="button" style="margin-right:78px;"><img id="Defensive-Awareness1" src="Images/Skill Tree/Defending/Defensive-Awareness.png" onmouseleave="offHover('Defensive-Awareness', 1)" onmouseover="onHover('Defensive-Awareness', 1)" alt=""></button>
+    <button type="button" name="button"><img id="Sliding-Tackle1" src="Images/Skill Tree/Defending/Sliding-Tackle.png" onmouseleave="offHover('Sliding-Tackle', 1)" onmouseover="onHover('Sliding-Tackle', 1)" alt=""></button>
+    <br>
+    <button type="button" name="button"><img id="Defensive-Awareness2" src="Images/Skill Tree/Defending/Defensive-Awareness.png" onmouseleave="offHover('Defensive-Awareness', 2)" onmouseover="onHover('Defensive-Awareness', 2)" alt=""></button>
+    <button type="button" name="button"><img id="Standing-Tackle2" src="Images/Skill Tree/Defending/Standing-Tackle.png" onmouseleave="offHover('Standing-Tackle', 2)" onmouseover="onHover('Standing-Tackle', 2)" alt=""></button>
+    <button type="button" name="button"><img id="Sliding-Tackle2" src="Images/Skill Tree/Defending/Sliding-Tackle.png" onmouseleave="offHover('Sliding-Tackle', 2)" onmouseover="onHover('Sliding-Tackle', 2)" alt=""></button>
+    <br>
+    <button type="button" name="button"><img id="Interceptions2" src="Images/Skill Tree/Defending/Interceptions.png" onmouseleave="offHover('Interceptions', 2)" onmouseover="onHover('Interceptions', 2)" alt=""></button>
+    <button type="button" name="button" style="margin-right:78px;"><img id="Standing-Tackle3" src="Images/Skill Tree/Defending/Standing-Tackle.png" onmouseleave="offHover('Standing-Tackle', 3)" onmouseover="onHover('Standing-Tackle', 3)" alt=""></button>
+    <br>
+    <button type="button" name="button"><img id="Gaurdian1" src="Images/Skill Tree/Defending/Gaurdian.png" onmouseleave="offHover('Gaurdian', 1)" onmouseover="onHover('Gaurdian', 1)" alt=""></button>
+  </div>
+  <div class="col" id="def-stats">
+    <table>
+      <tr>
+        <th>Defending</th>
+      </tr>
+      <tr>
+        <td colspan="2" id="progressbar">
+          <div class="progress defending-progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 2px" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </td>
+        <td id="defending-progress-stat"></td>
+      </tr>
+      <tr>
+        <td>Interceptions</td>
+        <td id="progressbar">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 83px" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-success" role="progressbar" style="width: 2px" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </td>
+        <td>83</td>
+        <td id="growth-value">+2</td>
+      </tr>
+      <tr>
+        <td>Def. Aware</td>
+        <td id="progressbar">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 78px" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </td>
+        <td>78</td>
+        <td id="growth-value"></td>
+      </tr>
+      <tr>
+        <td>Stand Tackle</td>
+        <td id="progressbar">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 80px" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </td>
+        <td>80</td>
+        <td id="growth-value"></td>
+      </tr>
+      <tr>
+        <td>Slide Tackle</td>
+        <td id="progressbar">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 81px" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </td>
+        <td>81</td>
+        <td id="growth-value"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+<script type="text/javascript" src="Javascript/defending-js.js">
+
+</script>
+</html>

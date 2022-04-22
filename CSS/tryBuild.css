@@ -1,0 +1,179 @@
+table {
+  width: auto;
+  margin: 2%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+td {
+  text-align: left;
+}
+
+form {
+  position: relative;
+  top: 15%;
+  right: 25%;
+}
+
+li {
+  padding-left: 10px;
+  margin-left: 0px;
+}
+
+.progress {
+  border-radius: 25px;
+  height: 11px;
+  background-color: white;
+}
+
+.progress-bar {
+  background-color: #375AF6;
+}
+
+.height-selection {
+  display: inline;
+}
+
+.row {
+  width: 100%;
+}
+
+.bg-success {
+  --bs-success-rgb: 46,255,45;
+}
+
+.avg-pace {
+  background-color: white;
+}
+
+#growth-results {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#growth-value {
+  color: #2EFF2D;
+}
+
+#dropdownMenuButton {
+  width: 110px;
+}
+
+#athletic {
+  margin-top: 35px;
+}
+
+#player {
+  width: 200px;
+  display: inline;
+  position: sticky;
+  left: 70%;
+  bottom: 10%;
+}
+
+#skill-tree {
+  margin-bottom: 20px;
+}
+
+#star {
+  height: 12.5px;
+}
+
+#progressbar {
+  width: 100px;
+}
+
+.pace-progress, .dribbling-progress, .shooting-progress, .defending-progress, .passing-progress, .physical-progress, .goalkeeping-progress {
+  height: 2px;
+  background-color: white;
+}
+
+@media (max-width:800px) {
+  .dropdown {
+    display: inline-block;
+  }
+  table {
+    margin: 0;
+  }
+
+  #player {
+    left: 500px;
+  }
+
+  .weight {
+    margin-top: 60px;
+  }
+}
+
+.col, .dropdown {
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.dropdown-menu li {
+position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+display: none;
+position: absolute;
+left: 100%;
+top: -7px;
+}
+.dropdown-menu .dropdown-submenu-left {
+right: 100%;
+left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+display: block;
+}
+
+#dropdownItems {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+#position-header:hover {
+  background-color: #e9ecef;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
