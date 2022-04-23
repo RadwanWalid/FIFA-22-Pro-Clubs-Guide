@@ -1,0 +1,57 @@
+img {
+  width: 45px;
+  height: 50px;
+  position: relative;
+  right: 6.75px;
+  bottom: 4px;
+  /* transform: rotate(-45deg); */
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+button {
+  margin: 10px;
+  border: 0px;
+  width: 44px;
+  height: 44px;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  /* transform: rotate(45deg); */
+}
+
+.shooting-progress {
+  height: 2px;
+  background-color: white;
+  width:200px;
+}
+
+#growth-value {
+  color: #2EFF2D;
+}
+
+#left-sho-tree, #right-sho-tree {
+  margin-top: 50px;
+}
+
+#left-sho-tree {
+  vertical-align: top;
+}
+
+#sho-stats {
+  vertical-align:top;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+#star {
+  height: 15px;
+  width: 18px;
+}
+
+@media(max-width:800px) {
+  #sho-stats {
+    margin-left: auto;
+  }
+}
