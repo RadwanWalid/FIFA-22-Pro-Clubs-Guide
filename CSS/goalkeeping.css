@@ -21,6 +21,21 @@ button {
   /* transform: rotate(45deg); */
 }
 
+.vl {
+  height: 35px;
+  width: 4px;
+  background-color: #343843;
+  z-index: -1;
+}
+
+.from-Ref1-to-Kic1 {
+  position: fixed;
+  left: 367.678px;
+  top: 100px;
+}
+
+
+
 .goalkeeping-progress {
   height: 2px;
   background-color: white;
