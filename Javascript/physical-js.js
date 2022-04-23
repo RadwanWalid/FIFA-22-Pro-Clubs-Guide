@@ -3,7 +3,7 @@ function onHover(name, num) {
 }
 
 function offHover(name, num) {
-document.getElementById(name + "" + num).src = "Images/Skill Tree/Physical/" + name + ".png";
+  document.getElementById(name + "" + num).src = "Images/Skill Tree/Physical/" + name + ".png";
 }
 
 
