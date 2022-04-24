@@ -1,9 +1,9 @@
 function onHover(name, num) {
-  document.getElementById(name + "" + num).src = "/Images/Skill Tree/Physical/" + name + " On Hover.png";
+  document.getElementById(name + "" + num).src = "../Images/Skill Tree/Physical/" + name + " On Hover.png";
 }
 
 function offHover(name, num) {
-  document.getElementById(name + "" + num).src = "/Images/Skill Tree/Physical/" + name + ".png";
+  document.getElementById(name + "" + num).src = "../Images/Skill Tree/Physical/" + name + ".png";
 }
 
 
