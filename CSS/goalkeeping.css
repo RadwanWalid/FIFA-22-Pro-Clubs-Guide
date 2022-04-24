@@ -28,13 +28,74 @@ button {
   z-index: -1;
 }
 
-.from-Ref1-to-Kic1 {
-  position: fixed;
-  left: 367.678px;
+hr {
+  height: 4px !important;
+  width: 35px;
+  background-color: #343843;
+  z-index: -1;
+}
+
+.from-ref1-to-kic1 {
+  position: absolute;
+  margin-left: 96.75px;
   top: 100px;
 }
 
+.from-kic1-to-div1 {
+  width: 100px;
+  position: absolute;
+  margin-left: 30px;
+  top: 112px;
+}
 
+.from-kic1-to-pos1 {
+  width: 100px;
+  position: absolute;
+  margin-left: 65px;
+  top: 112px;
+}
+
+.from-ref1-to-div1 {
+  position: absolute;
+  margin-left: 30px;
+  top: 112px;
+}
+
+.from-ref1-to-pos1 {
+  position: absolute;
+  margin-left: 163.25px;
+  top: 112px;
+}
+
+.from-pos1-to-ref2 {
+  position: absolute;
+  margin-left: 163.25px;
+  top: 160px;
+}
+
+.from-kic1-to-kic2 {
+  position: absolute;
+  margin-left: 96.75px;
+  top: 165px;
+}
+
+.from-div1-to-han2 {
+  position: absolute;
+  margin-left: 30px;
+  top: 165px;
+}
+
+.from-han1-to-haw1 {
+  position: absolute;
+  margin-left: 30px;
+  top: 230px;
+}
+
+.from-ref2-to-wal1 {
+  position: absolute;
+  margin-left: 164px;
+  top: 230px;
+}
 
 .goalkeeping-progress {
   height: 2px;
