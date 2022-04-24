@@ -42,7 +42,15 @@ button {
 }
 
 @media(max-width:800px) {
+  #def-tree {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+
   #def-stats {
-    margin-left: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
   }
 }
