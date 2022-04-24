@@ -4,6 +4,7 @@ img {
   position: relative;
   right: 6.75px;
   bottom: 4px;
+  z-index: 2;
   /* transform: rotate(-45deg); */
 }
 
@@ -27,12 +28,88 @@ img:hover {
   width:200px;
 }
 
+.vl {
+  position: relative;
+  height: 35px;
+  width: 4px;
+  background-color: #343843;
+  z-index: 0;
+}
+
+hr {
+  position: relative;
+  height: 4px !important;
+  width: 35px;
+  background-color: #343843;
+}
+
+.from-str1-to-sta1 {
+  left: 96px;
+  bottom: 210px;
+}
+
+.from-sta1-to-rea1 {
+  left: 163px;
+  bottom: 162px;
+}
+
+.from-sta1-to-str2 {
+  left: 29.5px;
+  bottom: 215px;
+}
+
+.from-sta1-to-rea1-branch {
+  height: 15px;
+  left: 96px;
+  bottom: 212px;
+  z-index: 1;
+}
+
+/* background-color: #0A8BFF; */
+
+.from-sta1-to-jum1 {
+  left: 96px;
+  bottom: 270px;
+}
+
+.from-str2-to-bul1 {
+  left: 29.5px;
+  bottom: 235px;
+}
+
+.from-jum1-to-rea2 {
+  left: 96px;
+  bottom: 280px;
+}
+
+.from-rea1-to-agg1 {
+  left: 163px;
+  bottom: 310px;
+}
+
+.from-jum1-to-rea1 {
+  width: 69px;
+  bottom: 391px;
+  left: 34px;
+}
+
+.from-jum1-to-str2 {
+  width: 68px;
+  bottom: 395px;
+  right: 34px;
+}
+
 #growth-value {
   color: #2EFF2D;
 }
 
 #left-phy-tree, #right-phy-tree {
+  vertical-align:top;
   margin-top: 50px;
+}
+
+#left-phy-tree {
+  height: 256px;
 }
 
 #phy-stats {
@@ -47,6 +124,7 @@ img:hover {
   }
 
   #phy-stats {
+    position: relative;
     margin: 0px;
   }
 }
