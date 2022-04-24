@@ -86,9 +86,9 @@ hr {
 }
 
 .from-han1-to-haw1 {
-  position: absolute;
+  position: relative;
   margin-left: 30px;
-  top: 230px;
+  bottom: 90px;
 }
 
 .from-ref2-to-wal1 {
