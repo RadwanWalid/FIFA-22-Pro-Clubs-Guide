@@ -36,65 +36,65 @@ hr {
 }
 
 .from-ref1-to-kic1 {
-  position: absolute;
+  position: relative;
   margin-left: 96.75px;
-  top: 100px;
+  bottom: 200px;
 }
 
 .from-kic1-to-div1 {
-  width: 100px;
-  position: absolute;
+  width: 67px;
+  position: relative;
   margin-left: 30px;
-  top: 112px;
+  bottom: 229px;
 }
 
 .from-kic1-to-pos1 {
-  width: 100px;
-  position: absolute;
-  margin-left: 65px;
-  top: 112px;
+  width: 67px;
+  position: relative;
+  margin-left: 100px;
+  bottom: 233px;
 }
 
 .from-ref1-to-div1 {
-  position: absolute;
+  position: relative;
   margin-left: 30px;
-  top: 112px;
+  bottom: 270px;
 }
 
 .from-ref1-to-pos1 {
-  position: absolute;
+  position: relative;
   margin-left: 163.25px;
-  top: 112px;
+  bottom: 307px;
 }
 
 .from-pos1-to-ref2 {
-  position: absolute;
+  position: relative;
   margin-left: 163.25px;
-  top: 160px;
+  bottom: 320px;
 }
 
 .from-kic1-to-kic2 {
-  position: absolute;
-  margin-left: 96.75px;
-  top: 165px;
+  position: relative;
+  margin-left: 97px;
+  bottom: 190px;
 }
 
-.from-div1-to-han2 {
-  position: absolute;
+.from-div1-to-han1 {
+  position: relative;
   margin-left: 30px;
-  top: 165px;
+  bottom: 300px;
 }
 
 .from-han1-to-haw1 {
   position: relative;
   margin-left: 30px;
-  bottom: 90px;
+  bottom: 295px;
 }
 
 .from-ref2-to-wal1 {
-  position: absolute;
-  margin-left: 164px;
-  top: 230px;
+  position: relative;
+  margin-left: 163.25px;
+  bottom: 330px;
 }
 
 .goalkeeping-progress {
