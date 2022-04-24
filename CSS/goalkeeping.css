@@ -118,7 +118,12 @@ hr {
 }
 
 @media(max-width:800px) {
+  #gk-tree {
+    margin: 0px;
+    height: 250px;
+  }
+
   #gk-stats {
-    margin-left: auto;
+    margin: 0px !important;
   }
 }

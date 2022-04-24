@@ -42,7 +42,11 @@ img:hover {
 }
 
 @media(max-width:800px) {
+  #left-phy-tree, #right-phy-tree {
+    margin: 0px;
+  }
+
   #phy-stats {
-    margin-left: auto;
+    margin: 0px;
   }
 }

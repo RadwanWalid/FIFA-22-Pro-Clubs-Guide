@@ -47,7 +47,11 @@ button {
 }
 
 @media(max-width:800px) {
+  #left-dri-tree, #right-dri-tree {
+    margin: 0px;
+  }
+
   #dri-stats {
-    margin-left: auto;
+    margin: 0px;
   }
 }

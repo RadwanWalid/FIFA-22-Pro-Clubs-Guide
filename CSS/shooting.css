@@ -51,7 +51,11 @@ button {
 }
 
 @media(max-width:800px) {
+  #left-sho-tree, #right-sho-tree {
+    margin: 0px;
+  }
+
   #sho-stats {
-    margin-left: auto;
+    margin: 0px;
   }
 }

@@ -43,14 +43,10 @@ button {
 
 @media(max-width:800px) {
   #def-tree {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 10px;
+    margin: 0px;
   }
 
   #def-stats {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 10px;
+    margin: 0px;
   }
 }

@@ -42,7 +42,12 @@ button {
 }
 
 @media(max-width:800px) {
+  #pac-tree {
+    margin: 0px;
+    height: 250px;
+  }
+
   #pac-stats {
-    margin-left: auto;
+    margin: 0px;
   }
 }

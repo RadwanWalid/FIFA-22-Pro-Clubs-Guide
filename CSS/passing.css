@@ -37,6 +37,7 @@ button {
 
 #left-pas-tree {
   vertical-align: top;
+  height: 320px;
 }
 
 #pas-stats {
@@ -46,7 +47,11 @@ button {
 }
 
 @media(max-width:800px) {
+  #left-pas-tree, #right-pas-tree {
+    margin: 0px;
+  }
+
   #pas-stats {
-    margin-left: auto;
+    margin: 0px;
   }
 }
