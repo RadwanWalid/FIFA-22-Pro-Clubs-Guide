@@ -4,6 +4,7 @@ img {
   height: 50px;
   right: 6.75px;
   bottom: 4px;
+  z-index: 2;
   /* transform: rotate(-45deg); */
 }
 
@@ -26,7 +27,7 @@ button {
   height: 35px;
   width: 4px;
   background-color: #343843;
-  z-index: -1;
+  z-index: 0;
 }
 
 hr {
@@ -34,59 +35,63 @@ hr {
   height: 4px !important;
   width: 35px;
   background-color: #343843;
-  z-index: -1;
+}
+
+.from-ref1-to-branch {
+  left: 97px;
+  bottom: 513px;
 }
 
 .from-ref1-to-kic1 {
   left: 96.75px;
-  bottom: 200px;
+  bottom: 250px;
 }
 
 .from-kic1-to-div1 {
   width: 67px;
   margin-left: 30px;
-  bottom: 229px;
+  bottom: 264px;
 }
 
 .from-kic1-to-pos1 {
-  width: 67px;
+  width: 67.25px;
   margin-left: 100px;
-  bottom: 233px;
+  bottom: 268px;
 }
 
 .from-ref1-to-div1 {
   left: 30px;
-  bottom: 270px;
+  bottom: 305px;
 }
 
 .from-ref1-to-pos1 {
   left: 163.25px;
-  bottom: 307px;
+  bottom: 340px;
 }
 
 .from-pos1-to-ref2 {
   left: 163.25px;
-  bottom: 320px;
+  bottom: 365px;
 }
 
 .from-kic1-to-kic2 {
   left: 97px;
-  bottom: 190px;
+  bottom: 230px;
 }
 
 .from-div1-to-han1 {
   left: 30px;
-  bottom: 300px;
+  bottom: 330px;
 }
 
 .from-han1-to-haw1 {
   left: 30px;
-  bottom: 295px;
+  bottom: 330px;
 }
 
 .from-ref2-to-wal1 {
   left: 163.25px;
-  bottom: 330px;
+  bottom: 370px;
 }
 
 .goalkeeping-progress {

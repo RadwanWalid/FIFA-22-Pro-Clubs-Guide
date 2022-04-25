@@ -150,7 +150,7 @@ td {
   border-radius: 3px;
 }
 
-.po, .he, .we {
+.po, .he, .we, .pts {
   margin-top: 15px;
 }
 
@@ -201,6 +201,16 @@ display: block;
 .button-icons {
   position: relative;
   right: 5px;
+}
+
+#skill-points {
+   background-color: rgba(255, 255, 255, 0.05);
+   width: 92px;
+   height:22px;
+   border-radius: 6px;
+   border: 2px solid #1C1F26;
+   text-align: center;
+   color: white;
 }
 
 #active-gk, #active-st{
