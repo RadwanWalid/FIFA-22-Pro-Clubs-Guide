@@ -99,6 +99,38 @@ hr {
   right: 34px;
 }
 
+.from-sta2-to-rea3 {
+  left: 30px;
+  bottom: 200px;
+}
+.from-rea3-to-agg2 {
+  left: 30px;
+  bottom: 180px;
+}
+.from-agg2-to-jum2 {
+  width: 69px;
+  bottom: 165px;
+}
+.from-agg2-to-jum3 {
+  left: 30.5px;
+  bottom: 220px;
+}
+.from-jum2-to-acr1 {
+  left: 96.5px;
+  bottom: 260px;
+}
+
+.from-rea3-to-jum2 {
+  left: 96.5px;
+  bottom: 200px;
+}
+
+.from-rea3-to-jum2-branch {
+  left: 30px;
+  bottom: 270px;
+  z-index: 1;
+}
+
 #growth-value {
   color: #2EFF2D;
 }
@@ -106,9 +138,6 @@ hr {
 #left-phy-tree, #right-phy-tree {
   vertical-align:top;
   margin-top: 50px;
-}
-
-#left-phy-tree {
   height: 256px;
 }
 
