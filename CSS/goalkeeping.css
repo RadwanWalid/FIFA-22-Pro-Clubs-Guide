@@ -39,7 +39,8 @@ hr {
 
 .from-ref1-to-branch {
   left: 97px;
-  bottom: 513px;
+  bottom: 225px;
+  z-index: 1;
 }
 
 .from-ref1-to-kic1 {

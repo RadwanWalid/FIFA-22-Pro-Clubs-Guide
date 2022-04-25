@@ -4,6 +4,7 @@ img {
   position: relative;
   right: 6.75px;
   bottom: 4px;
+  z-index: 2;
   /* transform: rotate(-45deg); */
 }
 
@@ -19,6 +20,75 @@ button {
   border-radius: 100px;
   background-color: rgba(0, 0, 0, 0);
   /* transform: rotate(45deg); */
+}
+
+hr {
+  position: relative;
+  height: 4px !important;
+  width: 35px;
+  background-color: #343843;
+}
+
+.vl {
+  position: relative;
+  height: 35px;
+  width: 4px;
+  background-color: #343843;
+  z-index: 0;
+}
+
+.from-acc1-to-acc2 {
+  left: 29.5px;
+  bottom: 210px;
+}
+
+.from-acc2-to-acc3 {
+  left: 29.5px;
+  bottom: 180px;
+}
+
+.from-sps1-to-sps2 {
+  left: 164.5px;
+  bottom: 280px;
+}
+
+.from-sps2-to-sps3 {
+  left: 164.5px;
+  bottom: 250px;
+}
+
+.from-sps2-to-sps4 {
+  left: 164.5px;
+  bottom: 301px;
+  z-index: 1;
+}
+
+.from-acc2-to-sps4 {
+  left: 29.5px;
+  bottom: 336px;
+  z-index: 1;
+}
+
+.from-sps4-to-che1 {
+  left: 97px;
+  bottom: 290px;
+}
+
+.from-branch-to-sps4 {
+  left: 97px;
+  bottom: 374px;
+}
+
+.from-acc2-to-branch {
+  width: 71px;
+  right: 34px;
+  bottom: 410px;
+}
+
+.from-sps2-to-branch {
+  width: 70.5px;
+  left: 34px;
+  bottom: 414px;
 }
 
 .pace-progress {
