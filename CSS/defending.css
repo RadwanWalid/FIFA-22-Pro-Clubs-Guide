@@ -4,6 +4,7 @@ img {
   position: relative;
   right: 6.75px;
   bottom: 4px;
+  z-index: 2;
   /* transform: rotate(-45deg); */
 }
 
@@ -21,10 +22,97 @@ button {
   /* transform: rotate(45deg); */
 }
 
+.vl {
+  position: relative;
+  height: 35px;
+  width: 4px;
+  background-color: #343843;
+  z-index: 0;
+}
+
+hr {
+  position: relative;
+  height: 4px !important;
+  width: 35px;
+  background-color: #343843;
+}
+
 .defending-progress {
   height: 2px;
   background-color: white;
   width:200px;
+}
+
+.from-int1-to-awa1{
+  left: 29.5px;
+  bottom: 270px;
+}
+
+.from-awa1-to-awa2{
+  left: 29.5px;
+  bottom: 250px;
+}
+
+.from-awa2-to-int2{
+  left: 29.5px;
+  bottom: 210px;
+}
+
+.from-awa2-to-sta3{
+  left: 97px;
+  bottom: 235px;
+}
+
+.from-sta1-to-sli1{
+  left: 164px;
+  bottom: 420px;
+}
+
+.from-sli1-to-sli2{
+  left: 164px;
+  bottom: 390px;
+}
+
+.from-sli1-to-sta2{
+  left: 97px;
+  bottom: 404px;
+}
+
+.from-sta2-to-sta3{
+  left: 97px;
+  bottom: 390px;
+}
+
+.from-sta3-to-gau1{
+  left: 97px;
+  bottom: 360px;
+}
+
+.from-sta2-to-int2 {
+  left: 97px;
+  bottom: 476px;
+}
+
+.from-int2-to-sta2 {
+  left: 29.5px;
+  bottom: 480px;
+}
+
+.from-sli1-to-sta2-branch {
+  left: 164px;
+  bottom: 610px;
+}
+
+.from-sli2-to-sta2 {
+  width: 71px;
+  left: 33px;
+  bottom: 614px;
+}
+
+.from-int2-to-sta3 {
+  width: 71px;
+  right: 34px;
+  bottom: 554px;
 }
 
 #growth-value {
