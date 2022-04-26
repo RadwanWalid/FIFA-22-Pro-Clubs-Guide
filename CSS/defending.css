@@ -61,6 +61,7 @@ hr {
 .from-awa2-to-sta3{
   left: 97px;
   bottom: 235px;
+  z-index: 1;
 }
 
 .from-sta1-to-sli1{
@@ -91,16 +92,19 @@ hr {
 .from-sta2-to-int2 {
   left: 97px;
   bottom: 476px;
+  z-index: 1;
 }
 
 .from-int2-to-sta2 {
   left: 29.5px;
   bottom: 480px;
+  z-index: 1;
 }
 
 .from-sli1-to-sta2-branch {
   left: 164px;
   bottom: 610px;
+  z-index: 1;
 }
 
 .from-sli2-to-sta2 {
