@@ -27,6 +27,7 @@ hr {
   height: 4px !important;
   width: 35px;
   background-color: #343843;
+  z-index: 0;
 }
 
 .vl {
@@ -34,7 +35,7 @@ hr {
   height: 35px;
   width: 4px;
   background-color: #343843;
-  z-index: 0;
+  z-index: 1;
 }
 
 .from-acc1-to-acc2 {
@@ -57,38 +58,26 @@ hr {
   bottom: 250px;
 }
 
-.from-sps2-to-sps4 {
-  left: 164.5px;
-  bottom: 301px;
-  z-index: 1;
-}
-
-.from-acc2-to-sps4 {
-  left: 29.5px;
-  bottom: 336px;
-  z-index: 1;
-}
-
 .from-sps4-to-che1 {
   left: 97px;
-  bottom: 290px;
+  bottom: 230px;
 }
 
 .from-branch-to-sps4 {
   left: 97px;
-  bottom: 374px;
+  bottom: 302px;
 }
 
 .from-acc2-to-branch {
   width: 71px;
   right: 34px;
-  bottom: 410px;
+  bottom: 340px;
 }
 
 .from-sps2-to-branch {
-  width: 70.5px;
-  left: 34px;
-  bottom: 414px;
+  width: 71px;
+  left: 33px;
+  bottom: 344px;
 }
 
 .pace-progress {
@@ -102,7 +91,9 @@ hr {
 }
 
 #pac-tree {
+  vertical-align: top;
   margin-top: 50px;
+  height: 310px;
 }
 
 #pac-stats {

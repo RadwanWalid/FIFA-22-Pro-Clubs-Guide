@@ -124,7 +124,9 @@ hr {
 }
 
 #def-tree {
+  vertical-align: top;
   margin-top: 50px;
+  height: 320px;
 }
 
 #def-stats {

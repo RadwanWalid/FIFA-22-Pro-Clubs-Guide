@@ -88,13 +88,13 @@ hr {
 }
 
 .from-jum1-to-rea1 {
-  width: 69px;
+  width: 68.75px;
   bottom: 391px;
   left: 34px;
 }
 
 .from-jum1-to-str2 {
-  width: 68px;
+  width: 68.25px;
   bottom: 395px;
   right: 35px;
 }
@@ -150,6 +150,7 @@ hr {
 @media(max-width:800px) {
   #left-phy-tree, #right-phy-tree {
     margin: 0px;
+    height: 276px;
   }
 
   #phy-stats {

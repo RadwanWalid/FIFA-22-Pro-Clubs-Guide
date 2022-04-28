@@ -106,6 +106,7 @@ hr {
 }
 
 #gk-tree {
+  vertical-align: top;
   margin-top: 50px;
   height: 256px;
 }
@@ -119,7 +120,7 @@ hr {
 @media(max-width:800px) {
   #gk-tree {
     margin: 0px;
-    height: 250px;
+    height: 266px;
   }
 
   #gk-stats {
