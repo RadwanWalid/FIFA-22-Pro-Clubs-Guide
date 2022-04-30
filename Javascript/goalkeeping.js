@@ -5,3 +5,7 @@ function onHover(name, num) {
 function offHover(name, num) {
   document.getElementById(name + "" + num).src = "../Images/Skill Tree/Goalkeeping/" + name + ".png";
 }
+
+function selected(name, num) {
+  document.getElementById(name + "" + num).src = "../Images/Skill Tree/Goalkeeping/" + name + " Selected.png";
+}
