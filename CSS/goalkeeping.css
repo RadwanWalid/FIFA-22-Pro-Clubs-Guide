@@ -22,6 +22,10 @@ button, input {
   /* transform: rotate(45deg); */
 }
 
+table {
+  margin-right: 125px;
+}
+
 .vl {
   position: relative;
   height: 35px;
@@ -113,26 +117,8 @@ hr {
 
 #gk-stats {
   vertical-align:top;
-  margin-top: 100px;
   margin-left: 200px;
 }
-
-/* .tree-icons {
-  height: 50px;
-  width: 45px;
-  background-attachment: local;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 45px 50px;
-  z-index: 2;
-  position: relative;
-  right: 6.5px;
-  top: 6px;
-}
-
-.tree-icons:hover {
-  transform: scale(1.1);
-} */
 
 .Reflexes1:hover, .Reflexes2:hover {
   content: url('../Images/Skill Tree/Goalkeeping/Reflexes On Hover.png') !important;
