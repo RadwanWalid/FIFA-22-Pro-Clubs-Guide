@@ -117,7 +117,7 @@ hr {
   margin-left: 200px;
 }
 
-.tree-icons {
+/* .tree-icons {
   height: 50px;
   width: 45px;
   background-attachment: local;
@@ -132,34 +132,34 @@ hr {
 
 .tree-icons:hover {
   transform: scale(1.1);
-}
+} */
 
 .Reflexes1:hover, .Reflexes2:hover {
-  background-image: url('../Images/Skill Tree/Goalkeeping/Reflexes On Hover.png') !important;
+  content: url('../Images/Skill Tree/Goalkeeping/Reflexes On Hover.png') !important;
 }
 
 .Diving1:hover {
-  background-image: url('../Images/Skill Tree/Goalkeeping/Diving On Hover.png') !important;
+  content: url('../Images/Skill Tree/Goalkeeping/Diving On Hover.png') !important;
 }
 
 .Kicking1:hover, .Kicking2:hover {
-  background-image: url('../Images/Skill Tree/Goalkeeping/Kicking On Hover.png') !important;
+  content: url('../Images/Skill Tree/Goalkeeping/Kicking On Hover.png') !important;
 }
 
 .Positioning1:hover {
-  background-image: url('../Images/Skill Tree/Goalkeeping/Positioning On Hover.png') !important;
+  content: url('../Images/Skill Tree/Goalkeeping/Positioning On Hover.png') !important;
 }
 
 .Handling1:hover {
-  background-image: url('../Images/Skill Tree/Goalkeeping/Handling On Hover.png') !important;
+  content: url('../Images/Skill Tree/Goalkeeping/Handling On Hover.png') !important;
 }
 
 .Hawk1:hover {
-  background-image: url('../Images/Skill Tree/Goalkeeping/Hawk On Hover.png') !important;
+  content: url('../Images/Skill Tree/Goalkeeping/Hawk On Hover.png') !important;
 }
 
 .Wall1:hover {
-  background-image: url('../Images/Skill Tree/Goalkeeping/Wall On Hover.png') !important;
+  content: url('../Images/Skill Tree/Goalkeeping/Wall On Hover.png') !important;
 }
 
 @media(max-width:800px) {
