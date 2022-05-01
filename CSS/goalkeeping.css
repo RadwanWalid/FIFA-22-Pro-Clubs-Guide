@@ -22,8 +22,20 @@ button, input {
   /* transform: rotate(45deg); */
 }
 
-table {
-  margin-right: 125px;
+hr {
+  position: relative;
+  height: 4px !important;
+  width: 35px;
+  background-color: #343843;
+}
+
+p {
+  color: #9CA5B4;
+  font-size: 14px;
+}
+
+h3 {
+  color: #F3FE59;
 }
 
 .vl {
@@ -32,13 +44,6 @@ table {
   width: 4px;
   background-color: #343843;
   z-index: 0;
-}
-
-hr {
-  position: relative;
-  height: 4px !important;
-  width: 35px;
-  background-color: #343843;
 }
 
 .from-ref1-to-branch {
@@ -102,7 +107,7 @@ hr {
 .goalkeeping-progress {
   height: 2px;
   background-color: white;
-  width:200px;
+  width: 200px;
 }
 
 #growth-value {
@@ -111,13 +116,32 @@ hr {
 
 #gk-tree {
   vertical-align: top;
-  margin-top: 50px;
+  margin-top: 60px;
   height: 256px;
+  margin-left: 100px;
 }
 
 #gk-stats {
-  vertical-align:top;
-  margin-left: 200px;
+  vertical-align: top;
+  margin: 0px;
+  margin-top: 50px;
+  margin-left: 15px;
+}
+
+#cost {
+  background-image: url('../Images/Cost Icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  padding-right: 39px;
+  padding-top: 2px;
+  word-spacing: 10px;
+}
+
+.Reflexes1-des {
+  text-align: left;
+  margin-left: 75px;
+  visibility: hidden;
 }
 
 .Reflexes1:hover, .Reflexes2:hover {
@@ -149,6 +173,10 @@ hr {
 }
 
 @media(max-width:800px) {
+  .gk-description {
+    margin: 0px;
+  }
+
   #gk-tree {
     margin: 0px;
     height: 266px;
