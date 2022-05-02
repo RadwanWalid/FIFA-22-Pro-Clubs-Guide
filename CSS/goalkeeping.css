@@ -47,13 +47,13 @@ h3 {
 }
 
 .from-ref1-to-branch {
-  left: 97px;
+  left: 96.5px;
   bottom: 225px;
   z-index: 1;
 }
 
 .from-ref1-to-kic1 {
-  left: 96.75px;
+  left: 96.5px;
   bottom: 250px;
 }
 
@@ -114,37 +114,6 @@ h3 {
   color: #2EFF2D;
 }
 
-#gk-tree {
-  vertical-align: top;
-  margin-top: 60px;
-  height: 256px;
-  margin-left: 100px;
-}
-
-#gk-stats {
-  vertical-align: top;
-  margin: 0px;
-  margin-top: 50px;
-  margin-left: 15px;
-}
-
-#cost {
-  background-image: url('../Images/Cost Icon.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-  padding-right: 39px;
-  padding-top: 2px;
-  word-spacing: 10px;
-}
-
-#Diving1-des, #Handling1-des, #Kicking1-des, #Reflexes1-des, #Positioning1-des {
-  text-align: left;
-  margin-left: 75px;
-  display: none;
-  position: relative;
-}
-
 .Reflexes1:hover, .Reflexes2:hover {
   content: url('../Images/Skill Tree/Goalkeeping/Reflexes On Hover.png') !important;
 }
@@ -171,6 +140,36 @@ h3 {
 
 .Wall1:hover {
   content: url('../Images/Skill Tree/Goalkeeping/Wall On Hover.png') !important;
+}
+
+#gk-tree {
+  vertical-align: top;
+  margin-top: 60px;
+  height: 256px;
+  margin-right: 200px;
+}
+
+#gk-stats {
+  vertical-align: top;
+  margin: 0px;
+  margin-top: 50px;
+  width: 400px;
+  margin-left: 25px;
+}
+
+#cost {
+  background-image: url('../Images/Cost Icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  padding-right: 39px;
+  padding-top: 2px;
+  word-spacing: 10px;
+}
+
+.des {
+  text-align: left;
+  display: none;
 }
 
 @media(max-width:800px) {
