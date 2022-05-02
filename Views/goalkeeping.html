@@ -21,18 +21,18 @@
   </head>
   <body style="background-color: rgba(28,31,26,0.5);">
     <div class="col" id="gk-tree">
-      <button type="button" name="button"><img class="Reflexes1" id="Reflexes1" src="../Images/Skill Tree/Goalkeeping/Reflexes.png" onclick="select('Reflexes', 1)"></button>
+      <button type="button" name="button"><img class="Reflexes1" id="Reflexes1" src="../Images/Skill Tree/Goalkeeping/Reflexes.png" onclick="select('Reflexes', 1)" onmouseover="showDescription('Reflexes', 1)" onmouseleave="hideDescription('Reflexes', 1)"></button>
       <br>
-      <button type="button" name="button"><img class="Diving1" id="Diving1" src="../Images/Skill Tree/Goalkeeping/Diving.png" onclick="select('Diving', 1)"></button>
-      <button type="button" name="button"><img class="Kicking1" id="Kicking1" src="../Images/Skill Tree/Goalkeeping/Kicking.png" onclick="select('Kicking', 1)"></button>
-      <button type="button" name="button"><img class="Positioning1" id="Positioning1" src="../Images/Skill Tree/Goalkeeping/Positioning.png" onclick="select('Positioning', 1)"></button>
+      <button type="button" name="button"><img class="Diving1" id="Diving1" src="../Images/Skill Tree/Goalkeeping/Diving.png" onclick="select('Diving', 1)" onmouseover="showDescription('Diving', 1)" onmouseleave="hideDescription('Diving', 1)"></button>
+      <button type="button" name="button"><img class="Kicking1" id="Kicking1" src="../Images/Skill Tree/Goalkeeping/Kicking.png" onclick="select('Kicking', 1)" onmouseover="showDescription('Kicking', 1)" onmouseleave="hideDescription('Kicking', 1)"></button>
+      <button type="button" name="button"><img class="Positioning1" id="Positioning1" src="../Images/Skill Tree/Goalkeeping/Positioning.png" onclick="select('Positioning', 1)" onmouseover="showDescription('Positioning', 1)" onmouseleave="hideDescription('Positioning', 1)"></button>
       <br>
-      <button type="button" name="button"><img class="Handling1" id="Handling1" src="../Images/Skill Tree/Goalkeeping/Handling.png" onclick="select('Handling', 1)"></button>
-      <button type="button" name="button"><img class="Kicking2" id="Kicking2" src="../Images/Skill Tree/Goalkeeping/Kicking.png" onclick="select('Kicking', 2)"></button>
-      <button type="button" name="button"><img class="Reflexes2" id="Reflexes2" src="../Images/Skill Tree/Goalkeeping/Reflexes.png" onclick="select('Reflexes', 2)"></button>
+      <button type="button" name="button"><img class="Handling1" id="Handling1" src="../Images/Skill Tree/Goalkeeping/Handling.png" onclick="select('Handling', 1)" onmouseover="showDescription('Handling', 1)" onmouseleave="hideDescription('Handling', 1)"></button>
+      <button type="button" name="button"><img class="Kicking2" id="Kicking2" src="../Images/Skill Tree/Goalkeeping/Kicking.png" onclick="select('Kicking', 2)" onmouseover="showDescription('Kicking', 2)" onmouseleave="hideDescription('Kicking', 2)"></button>
+      <button type="button" name="button"><img class="Reflexes2" id="Reflexes2" src="../Images/Skill Tree/Goalkeeping/Reflexes.png" onclick="select('Reflexes', 2)" onmouseover="showDescription('Reflexes', 2)" onmouseleave="hideDescription('Reflexes', 2)"></button>
       <br>
-      <button type="button" name="button" style="margin-right:78px;"><img class="Hawk1" id="Hawk1" src="../Images/Skill Tree/Goalkeeping/Hawk.png" onclick="select('Hawk', 1)"></button>
-      <button type="button" name="button"><img class="Wall1" id="Wall1" src="../Images/Skill Tree/Goalkeeping/Wall.png" onclick="select('Wall', 1)"></button>
+      <button type="button" name="button" style="margin-right:78px;"><img class="Hawk1" id="Hawk1" src="../Images/Skill Tree/Goalkeeping/Hawk.png" onclick="select('Hawk', 1)" onmouseover="showDescription('Hawk', 1)" onmouseleave="hideDescription('Hawk', 1)"></button>
+      <button type="button" name="button"><img class="Wall1" id="Wall1" src="../Images/Skill Tree/Goalkeeping/Wall.png" onclick="select('Wall', 1)" onmouseover="showDescription('Wall', 1)" onmouseleave="hideDescription('Wall', 1)"></button>
       <div class="vl from-ref1-to-branch"></div>
       <div class="vl from-ref1-to-kic1"></div>
       <hr class="from-kic1-to-div1">
@@ -47,67 +47,88 @@
     </div>
     <div class="col" id="gk-stats">
       <div class="col gk-description">
-        <div class="Reflexes1-des">
+        <div id="Diving1-des">
+          <h3>Diving</h3>
+          <h6 id="cost">Cost: 4</h6>
+          <p>Select this trait to increase your Goal Keeper diving ability to stop the ball</p>
+        </div>
+        <div id="Handling1-des">
+          <h3>Handling</h3>
+          <h6 id="cost">Cost: 7</h6>
+          <p>Select this trait to increase your Goal Keeper ball handling ability</p>
+        </div>
+        <div id="Kicking1-des">
+          <h3>Kicking</h3>
+          <h6 id="cost">Cost: 5</h6>
+          <p>Select this trait to increase your Goal Keeper kicking ability</p>
+        </div>
+        <div id="Reflexes1-des">
           <h3>Reflexes</h3>
           <h6 id="cost">Cost: 2</h6>
           <p>Increases the players ability to react and make saves</p>
         </div>
+        <div id="Positioning1-des">
+          <h3>Positioning</h3>
+          <h6 id="cost">Cost: 9</h6>
+          <p>Select this trait to increase your Goal Keeper positioning</p>
+        </div>
       </div>
+      <br>
       <table>
         <tr>
           <td>GK Diving</td>
           <td id="progressbar">
             <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 10px" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-              <div class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="Diving-bar" class="progress-bar" role="progressbar" style="width: 10px" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="Diving-inc" class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </td>
           <td>10</td>
-          <td id="growth-value"></td>
+          <td class="growth-value" id="Diving-growth-value"></td>
         </tr>
         <tr>
           <td>GK Handling</td>
           <td id="progressbar">
             <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 10px" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-              <div class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="Handling-bar" class="progress-bar" role="progressbar" style="width: 10px" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="Handling-inc" class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </td>
           <td>10</td>
-          <td id="growth-value"></td>
+          <td class="growth-value" id="Handling-growth-value"></td>
         </tr>
         <tr>
           <td>GK Kicking</td>
           <td id="progressbar">
             <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 10px" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-              <div class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="Kicking-bar" class="progress-bar" role="progressbar" style="width: 10px" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="Kicking-inc" class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </td>
           <td>10</td>
-          <td id="growth-value"></td>
+          <td class="growth-value" id="Kicking-growth-value"></td>
         </tr>
         <tr>
           <td>GK Reflexes</td>
           <td id="progressbar">
             <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 10px" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-              <div class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="Reflexes-bar" class="progress-bar" role="progressbar" style="width: 10px" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="Reflexes-inc" class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </td>
           <td>10</td>
-          <td id="growth-value"></td>
+          <td class="growth-value" id="Reflexes-growth-value"></td>
         </tr>
         <tr>
           <td>GK Pos.</td>
           <td id="progressbar">
             <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 10px" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-              <div class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="Positioning-bar" class="progress-bar" role="progressbar" style="width: 10px" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="Positioning-inc" class="progress-bar bg-success" role="progressbar" style="width: 0px" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </td>
           <td>10</td>
-          <td id="growth-value"></td>
+          <td class="growth-value" id="Positioning-growth-value"></td>
         </tr>
       </table>
     </div>

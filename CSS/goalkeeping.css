@@ -110,7 +110,7 @@ h3 {
   width: 200px;
 }
 
-#growth-value {
+.growth-value {
   color: #2EFF2D;
 }
 
@@ -138,10 +138,11 @@ h3 {
   word-spacing: 10px;
 }
 
-.Reflexes1-des {
+#Diving1-des, #Handling1-des, #Kicking1-des, #Reflexes1-des, #Positioning1-des {
   text-align: left;
   margin-left: 75px;
-  visibility: hidden;
+  display: none;
+  position: relative;
 }
 
 .Reflexes1:hover, .Reflexes2:hover {
