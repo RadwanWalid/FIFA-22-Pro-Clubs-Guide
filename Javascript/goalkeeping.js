@@ -50,7 +50,6 @@ function select(name, num) {
 function unselect(name, num) {
   var unselect = document.getElementById(name + "" + num);
   var index2 = parseInt(path1.indexOf(unselect));
-  alert(unselect.id);
   if(path1[index2].id == "Kicking2") {
     document.getElementById(name + "" + num).src = "../Images/Skill Tree/Goalkeeping/" + name + ".png";
     document.getElementById(name + "" + num).onclick = function() {select(name, num);}
