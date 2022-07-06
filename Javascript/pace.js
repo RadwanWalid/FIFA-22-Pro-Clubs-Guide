@@ -180,7 +180,7 @@ function traverse2(chosen) {
   var cost = 100;
   var pathIndex = -1;
 
-  if(chosen.paths !+= null) {
+  if(chosen.paths !== null) {
     if(!chosen.selected) {
         for(var i = 0; i < chosen.paths.length; i++) {
           var pathCost = 0;
@@ -203,6 +203,7 @@ function traverse2(chosen) {
     } else {
       // unselect
   }
-    chosen.image.src = "../Images/Skill Tree/Pace/" + chosen.image.id.substring(0,chosen.image.id.length-1) + " Selected.png";
-    chosen.selected = true;
+}
+chosen.image.src = "../Images/Skill Tree/Pace/" + chosen.image.id.substring(0,chosen.image.id.length-1) + " Selected.png";
+chosen.selected = true;
 }
