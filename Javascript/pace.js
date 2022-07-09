@@ -6,76 +6,6 @@ function offHover(name, num) {
   document.getElementById(name + "" + num).src = "../Images/Skill Tree/Pace/" + name + ".png";
 }
 
-class Graph {
-  constructor(noOfVertices) {
-    this.noOfVertices = noOfVertices;
-    this.AdjList = new Map();
-  }
-
-  addVertex(v) {
-    this.AdjList.set(v, []);
-  }
-
-  addEdge(v, w) {
-    this.AdjList.get(v).push(w);
-    this.AdjList.get(w).push(v);
-  }
-
-
-  // Prints the vertex and adjacency list
-  printGraph()
-  {
-      // get all the vertices
-      var get_keys = this.AdjList.keys();
-
-      // iterate over the vertices
-      for (var i of get_keys)
-  {
-          // great the corresponding adjacency list
-          // for the vertex
-          var get_values = this.AdjList.get(i);
-          var conc = "";
-
-          // iterate over the adjacency list
-          // concatenate the values into a string
-          for (var j of get_values)
-              conc += j + " ";
-
-          // print the vertex and its adjacency list
-          console.log(i + " -> " + conc);
-      }
-  }
-//   bfs(start) {
-//     var visited = {};
-//     var q = [];
-//
-//     q.push(start);
-//
-//     while(q != "") {
-//       var node = q.shift();
-//
-//       console.log(node);
-//
-//       var list = this.AdjList.get(node);
-//
-//       for(var i in list) {
-//         var neighbour = list[i];
-//         console.log(neighbour);
-//         if(!visited[neighbour]) {
-//           visited[neighbour] = true;
-//           q.push(neighbour);
-//         }
-//       }
-//
-//
-//     }
-//
-//   }
-//
-//
-}
-
-
 const acc1 = new Node(document.getElementById('acc1'), document.getElementById('Acceleration1'));
 const ss1 = new Node(document.getElementById('ss1'), document.getElementById('Sprint-Speed1'));
 const acc2 = new Node(document.getElementById('acc2'), document.getElementById('Acceleration2'));
@@ -84,26 +14,6 @@ const acc3 = new Node(document.getElementById('acc3'), document.getElementById('
 const ss3 = new Node(document.getElementById('ss3'), document.getElementById('Sprint-Speed3'));
 const ss4 = new Node(document.getElementById('ss4'), document.getElementById('Sprint-Speed4'));
 const ch1 = new Node(document.getElementById('ch1'), document.getElementById('Cheetah1'));
-
-// var graph = new Graph(8);
-// var vertices = [acc1, ss1, acc2, ss2, acc3, ss3, ss4, ch1];
-//
-// for(var i = 0; i < vertices.length; i++) {
-//   graph.addVertex(vertices[i]);
-//   vertices[i].button.addEventListener("click", function(){traverse(vertices[i]);});
-// }
-//
-// graph.addEdge(acc1, acc2);
-// graph.addEdge(acc2, acc3);
-// graph.addEdge(acc2, ss4);
-// graph.addEdge(acc2, ss3);
-// graph.addEdge(ss1, ss2);
-// graph.addEdge(ss2, ss3);
-// graph.addEdge(ss2, ss4);
-// graph.addEdge(ss2, acc3);
-// graph.addEdge(ss4, ch1);
-
-// graph.bfs(ch1);
 
 function Node(button, image) {
   this.button = button;
@@ -114,7 +24,6 @@ function Node(button, image) {
   this.paths = null;
 }
 
-
 acc3.paths = [[acc1, acc2], [ss1, ss2]];
 ss3.paths = [[ss1, ss2], [acc1, acc2]];
 ch1.paths = [[acc1, acc2, ss4], [ss1, ss2, ss4]];
@@ -122,25 +31,24 @@ ss4.paths = [[acc1, acc2], [ss1, ss2]];
 acc2.paths = [[acc1]];
 ss2.paths = [[ss1]];
 
-acc1.nextNode = acc2;
-ss1.nextNode = ss2;
-acc2.prevNode = acc1; acc2.nextNode = acc3;
-ss2.prevNode = ss1; ss2.nextNode = ss3;
-acc3.prevNode = acc2;
-ss3.prevNode = ss2;
-ss4.prevNode = acc2;
-ss4.nextNode = ch1;
-ch1.prevNode = ss4;
-
-// acc1.nextNode = [acc2];
-// ss1.nextNode = [ss2];
-// acc2.prevNode = [acc1]; acc2.nextNode = [acc3, ss4, ss3];
-// ss2.prevNode = [ss1]; ss2.nextNode = [ss3, ss4, acc3];
-// acc3.prevNode = [acc2, ss2];
-// ss3.prevNode = [ss2, acc2];
-// ss4.prevNode = [acc2, ss2];
-// ss4.nextNode = [ch1];
-// ch1.prevNode = [ss4];
+// acc1.nextNode = acc2;
+// ss1.nextNode = ss2;
+// acc2.prevNode = acc1; acc2.nextNode = acc3;
+// ss2.prevNode = ss1; ss2.nextNode = ss3;
+// acc3.prevNode = acc2;
+// ss3.prevNode = ss2;
+// ss4.prevNode = acc2;
+// ss4.nextNode = ch1;
+// ch1.prevNode = ss4;
+acc1.nextNode = [acc2];
+ss1.nextNode = [ss2];
+acc2.prevNode = [acc1]; acc2.nextNode = [acc3, ss4, ss3];
+ss2.prevNode = [ss1]; ss2.nextNode = [ss3, ss4, acc3];
+acc3.nextNode = null; acc3.prevNode = [acc2, ss2];
+ss3.nextNode = null; ss3.prevNode = [ss2, acc2];
+ss4.prevNode = [acc2, ss2];
+ss4.nextNode = [ch1];
+ch1.nextNode = null; ch1.prevNode = [ss4];
 
 acc1.button.addEventListener("click", function(){traverse2(acc1);});
 ss1.button.addEventListener("click", function(){traverse2(ss1);});
@@ -170,17 +78,42 @@ function traverse(chosen) {
   }
 }
 
-function isEmpty(array) {
-  return (array == "");
+function start(chosen) {
+  if(chosen.selected) {
+    chosen.image.src = "../Images/Skill Tree/Pace/" + chosen.image.id.substring(0,chosen.image.id.length-1) + ".png";
+    chosen.selected = false;
+  }
+  else {
+    chosen.image.src = "../Images/Skill Tree/Pace/" + chosen.image.id.substring(0,chosen.image.id.length-1) + " Selected.png";
+    chosen.selected = true;
+  }
 }
 
-// alert(adjacencyList = graph.AdjList.get(acc2));
+class LinkedList {
+  constructor(){
+    this.head = null;
+    this.size = 0;
+  }
+
+  add(node) {
+    if(this.head == null) {
+        this.head = node;
+    }
+    else {
+      var current = this.head;
+      while(current.next) {
+        current = current.next;
+      }
+      current.next = node;
+    }
+    this.size++;
+  }
+}
 
 function traverse2(chosen) {
   var cost = 100;
   var pathIndex = -1;
 
-  if(chosen.paths !== null) {
     if(!chosen.selected) {
         for(var i = 0; i < chosen.paths.length; i++) {
           var pathCost = 0;
@@ -200,10 +133,36 @@ function traverse2(chosen) {
           chosen.paths[pathIndex][z].image.src = "../Images/Skill Tree/Pace/" + chosen.paths[pathIndex][z].image.id.substring(0,chosen.paths[pathIndex][z].image.id.length-1) + " Selected.png";
           chosen.paths[pathIndex][z].selected = true;
         }
+        chosen.image.src = "../Images/Skill Tree/Pace/" + chosen.image.id.substring(0,chosen.image.id.length-1) + " Selected.png";
+        chosen.selected = true;
     } else {
-      // unselect
+      chosen.image.src = "../Images/Skill Tree/Pace/" + chosen.image.id.substring(0,chosen.image.id.length-1) + ".png";
+      chosen.selected = false;
+
+      var isPathSelected = false;
+      var nodesToBeRemoved = new LinkedList();
+      for(var z = 0; z < chosen.nextNode.length; z++) {
+        for(var k = 0; k < chosen.nextNode[z].paths.length; k++) {
+          if(chosen.nextNode[z].paths[k][chosen.nextNode[z].paths[k].length-1].selected) {
+            isPathSelected = true;
+          }
+        }
+        if(!isPathSelected) {
+          nodesToBeRemoved.add(chosen.nextNode[z]);
+        }
+      }
+      if(!isPathSelected) {
+        var current = nodesToBeRemoved.head;
+        while(current) {
+          current.image.src = "../Images/Skill Tree/Pace/" + current.image.id.substring(0, current.image.id.length-1) + ".png";
+          current.selected = false;
+          for(var y = 0; current.nextNode !== null && y < current.nextNode.length; y++) {
+            current.nextNode[y].image.src = "../Images/Skill Tree/Pace/" + current.nextNode[y].image.id.substring(0,current.nextNode[y].image.id.length-1) + ".png";
+            current.nextNode[y].selected = false;
+          }
+          current = current.next;
+        }
+      }
+
   }
-}
-chosen.image.src = "../Images/Skill Tree/Pace/" + chosen.image.id.substring(0,chosen.image.id.length-1) + " Selected.png";
-chosen.selected = true;
 }
